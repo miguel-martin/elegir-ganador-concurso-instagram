@@ -24,6 +24,7 @@ var errorStyle = 'background: red; color: white; font-size: x-large'
 var infoStyle = 'background: green; color: white; font-size: x-large'
 var warningStyle = 'background: green; color: white; font-size: large'
 var successStyle = 'background: #ffd052; color: black; font-size: x-large'
+var successStyleSm = 'background: #ffd052; color: black; font-size: small'
 
 var counter = '-'
 var commentCount = 0
@@ -159,11 +160,13 @@ var showPeopleAndPickWinner = (people, totalComments) => {
   reset( interval )
   loadingCount >= loadingLimitBreak && log( '%cError: comments stopped loading properly, please review results.\n\nYou can most likely just paste the code again WITHOUT reloading.', errorStyle )
   Boolean( button || loadingSvg.length ) && log( '%cWarning: button to load more comments is still visible. This is probably because of a bug where IG enters an inescapable infinite loop by loading the same comments over and over.\n\nRegardless, run the script again just to make sure (WITHOUT reloading).\n\nIf nothing changes or if it loads comments you\'ve seen before, use the winner output below.', warningStyle )
+  log('%cMostrando el listado de participantes...', successStyle)
   for (var i = 0; i < people.length; i++) {
     log(people[i]);
   }
   log( `${totalComments} comentarios totales (excluyendo respuestas, incluyendo duplicados)` )
-  log( removeDuplicates ? `Eliminados ${totalComments - people.length} los comentarios duplicados` : 'duplicates not removed' )
-  log( `%cY el elegido (por un método aleatorio) de un total de ${num} ${num === 1 ? 'entrada' : 'entradas'} es...\n\n${WINNER.toUpperCase()} !!!!`, successStyle )
+  log( removeDuplicates ? `Limpiadas las ${totalComments - people.length} personas que comentaron mas de una vez` : 'duplicates not removed' )
+  log( `%cY el elegido (aleatoriamente) de un total de ${num} ${num === 1 ? 'entrada' : 'entradas'} es...\n\n${WINNER.toUpperCase()} !!!!`, successStyle )
   log( `%chttps://www.instagram.com/${WINNER}/`, 'font-size: large' )
+  log('%cPuedes guardar el listado de participantes dandole a botón derecho y eligiendo \'Save as\' ', successStyleSm)
 }

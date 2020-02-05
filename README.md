@@ -8,7 +8,7 @@ Muestra en la consola todos los participantes (tiene la capacidad de eliminar du
 
 - Abre Google Chrome y navega a la página del post en cuestión. La URL debe ser del tipo 
 - Abre la [Consola Javascript](https://developers.google.com/web/tools/chrome-devtools/console/).
-- Pega el código completo.
+- Pega [este código completo](https://raw.githubusercontent.com/miguel-martin/elegir-ganador-concurso-instagram/master/elegir-ganador-de-concurso-instagram.js).
 - Dale a Enter.
 - Espera.
 
