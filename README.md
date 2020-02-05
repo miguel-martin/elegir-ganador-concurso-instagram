@@ -12,6 +12,8 @@ Muestra en la consola todos los participantes (tiene la capacidad de eliminar du
 - Dale a Enter.
 - Espera.
 
+![Elegir ganador de concurso de instagram](https://raw.githubusercontent.com/miguel-martin/elegir-ganador-concurso-instagram/master/imgs/screenshot.jpg)
+
 
 ### Agradecimientos
 
