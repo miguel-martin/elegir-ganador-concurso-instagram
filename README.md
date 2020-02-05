@@ -15,7 +15,7 @@ Muestra en la consola todos los participantes (tiene la capacidad de eliminar du
 
 ### Agradecimientos
 
-Este código está basado en un script de [Kevin Bost] (https://gist.github.com/kevbost/)
+Este código está basado en un script de [Kevin Bost](https://gist.github.com/kevbost/)
 
 
 
